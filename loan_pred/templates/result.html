@@ -1,0 +1,117 @@
+{% load static %}
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+    <style>
+        body {
+            
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('{% static "d.png" %}');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+            
+        
+
+        .result-box {
+            background-color: #b7a3ad;
+            padding: 50px;
+            border-radius: 19px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+            margin-top: 200px;
+            margin-left: 440px;
+            
+        }
+
+        .result-text {
+            color: #24044c;
+            font-size: 24px;
+            margin-bottom: 20px;
+            
+        }
+        .login-container{
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 1250px;
+            margin-top: 3px;
+            
+        }
+        
+        .btn{
+            padding: 10px 20px;
+            background-color: #042a54;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin-right: 10px;
+        }
+        .btn:hover{
+            background-color: #460c6a;
+        }
+    </style>
+</head>
+<body>
+    <div><br>
+        <div class="login-container">
+            <a href="/login/" class="btn">LOGIN</a>
+            <a href="/register/" class="btn">REGISTER</a>
+        </div>
+    <div class="result-box">
+        <h1>Loan Prediction Result</h1><br>
+        <div class="result-text">{{ result }}</div>
+    </div>
+</div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Prediction Result</title>
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('{% static "d.png" %}'); /* Replace 'background_image.jpg' with your image file */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #0a0a0a;
+        }
+        .result-container {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent black background */
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h2>Loan Prediction Result :</h2>
+        <div class="result-text">{{ result }}</div>
+        
+    </div>
+</body>
+</html>
